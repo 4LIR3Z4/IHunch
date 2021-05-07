@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">IHunch</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+
+
+
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Profile</string>
+    <string name="notify_header">Notifications</string>
+
+    <!-- Messages Preferences -->
+    <string name="name_title">Your Name</string>
+    <string name="gender_title">Gender</string>
+
+    <!-- Sync Preferences -->
+    <string name="notify_title">Notify Me</string>
+    <string name="notify_Sound_title">No</string>
+    <string name="notify_Sound_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="notify_Sound_summary_off">Only download attachments when manually requested</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="author">Alireza Barkhordari</string>
+    <string name="website" translatable="false">ihunch.ir</string>
+    <string name="authortext">Author</string>
+    <string name="authorwebsite" translatable="false">alirezab.ir</string>
+    <string name="Day">Day</string>
+    <string name="menu_exercises">Exercises</string>
+
+</resources>

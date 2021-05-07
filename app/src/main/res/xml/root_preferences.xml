@@ -1,0 +1,41 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/messages_header">
+
+        <EditTextPreference
+            app:key="User_name"
+
+            app:title="@string/name_title"
+            app:useSimpleSummaryProvider="true" />
+
+
+
+        <ListPreference
+
+            app:defaultValue="Male"
+            app:entries="@array/gender_entries"
+            app:entryValues="@array/gender_values"
+            app:key="Gender"
+            app:title="@string/gender_title"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/notify_header">
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_notification_important_24"
+            app:key="Notify"
+            app:defaultValue="true"
+            app:title="@string/notify_title" />
+
+        <SwitchPreferenceCompat
+            app:dependency="Notify"
+            app:key="Notify_message"
+            app:summaryOff="@string/notify_Sound_summary_off"
+            app:summaryOn="@string/notify_Sound_summary_on"
+            app:title="@string/notify_Sound_title" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_medium"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="2dp"
+        >
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+
+            android:layout_height="wrap_content"
+            android:text="@string/Day" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_medium"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="2dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_height="60dp"
+                    android:layout_width="60dp"
+                    android:src="@drawable/ic_baseline_local_fire_department_24"
+                    />
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+
+                    android:textAlignment="center"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+
+                    android:layout_height="wrap_content"
+                    android:text="24 kCal" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_height="60dp"
+                    android:layout_width="60dp"
+                    android:src="@drawable/ic_weight_lifter_grey600_48dp"
+                    />
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+
+                    android:textAlignment="center"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+
+                    android:layout_height="wrap_content"
+                    android:text="4" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_height="60dp"
+                    android:layout_width="60dp"
+                    android:src="@drawable/ic_baseline_access_time_24"
+                    />
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+
+                    android:textAlignment="center"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+
+                    android:layout_height="wrap_content"
+                    android:text="24 min" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_medium"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="2dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+
+            android:gravity="center"
+            android:layout_margin="10dp"
+            >
+
+<androidx.appcompat.widget.AppCompatImageView
+    android:layout_width="wrap_content"
+    android:layout_height="360dp"
+    android:id="@+id/img_exercise"
+
+    />
+
+        </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

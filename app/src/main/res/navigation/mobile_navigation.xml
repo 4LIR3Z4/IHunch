@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="ir.alirezab.ihunch.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="ir.alirezab.ihunch.ui.about.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="ir.alirezab.ihunch.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+<fragment
+    android:id="@+id/nav_exercise_list"
+    android:name="ir.alirezab.ihunch.ui.exercise.ExerciseListFragment"
+
+    android:label="ExerciseList"
+    tools:layout="@layout/fragment_exercise_list"
+/>
+    <fragment
+        android:id="@+id/nav_exercise"
+        android:name="ir.alirezab.ihunch.ui.exercise.ExerciseFragment"
+        android:label="Exercise"
+        tools:layout="@layout/fragment_exercise"
+
+        />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="ir.alirezab.ihunch.ui.settings.SettingsFragment"
+        android:label="Settings"
+
+        />
+
+</navigation>

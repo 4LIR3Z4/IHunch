@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IHunch</string>
+    <string name="action_settings">تنظیمات</string>
+    <string name="Day">روز</string>
+    <string name="authortext">برنامه نویس</string>
+    <string name="author">علیرضا برخورداری</string>
+    <string name="notify_title">اطلاع رسانی</string>
+    <string name="gender_title">جنسیت</string>
+    <string name="name_title">نام</string>
+    <string name="notify_header">اطلاع رسانی</string>
+    <string name="messages_header">پروفایل</string>
+    <string name="title_activity_settings">صفحه تنظیمات</string>
+    <string name="menu_home">داشبورد</string>
+    <string name="notify_Sound_title">صدا</string>
+    <string name="notify_Sound_summary_on">صدا میکنه</string>
+    <string name="notify_Sound_summary_off">صدا نمیکنه</string>
+    <string name="menu_exercises">لیست تمرین ها</string>
+
+</resources>

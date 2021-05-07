@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    >
+<com.google.android.material.card.MaterialCardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:layout_marginTop="@dimen/spacing_small"
+    android:layout_marginStart="@dimen/spacing_medium"
+    android:layout_marginEnd="@dimen/spacing_medium"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+
+    >
+<RelativeLayout
+    android:background="?attr/selectableItemBackground"
+
+    android:layout_width="match_parent"
+    android:id="@+id/exercise_item_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/spacing_medium"
+
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/exercise_item_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="TODO"
+        android:src="@android:drawable/btn_star"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/exercise_item_name"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/text_margin"
+        android:layout_toEndOf="@id/exercise_item_img"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textStyle="bold" />
+
+
+    <!--        <com.google.android.material.button.MaterialButton-->
+    <!--            android:id="@+id/buttonIcon1"-->
+    <!--            style="@style/MaterialButton.OutlinedButton.IconOnly"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="end"-->
+    <!--            android:checkable="true"-->
+
+    <!--            android:clickable="false"-->
+    <!--            app:icon="@drawable/ic_favorites"-->
+    <!--            app:strokeWidth="0dp" />-->
+    <RelativeLayout
+        android:id="@+id/exercise_item_progress_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true">
+
+        <TextView
+
+            android:id="@+id/exercise_item_Percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <ProgressBar
+            android:id="@+id/exercise_item_progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:indeterminate="false"
+
+
+            android:max="100"
+            android:progress="75"
+            android:progressDrawable="@drawable/circular_progress_bar" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
+</RelativeLayout>
